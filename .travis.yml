@@ -1,0 +1,7 @@
+language: php
+php:
+  - 5.4
+  - 5.5
+before_install: sudo apt-get install nginx-light
+before_script: ./build/before.sh
+script: phpunit tests
